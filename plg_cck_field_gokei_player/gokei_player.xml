@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="cck_field" version="3.0.0" method="upgrade">
+
+	<name>Gokei Player</name>
+	<author>José Agnaldo Jr.</author>
+	<creationDate>Dez 2013</creationDate>
+	<authorEmail>agjunior.sd@gmail.com</authorEmail>
+	<authorUrl>http://fb.me/agjunior</authorUrl>
+	<copyright>Copyright (C) 2013. Jospe Agnaldo Jr. All Rights Reserved.</copyright>
+	<license>GNU General Public License version 2 or later.</license>
+	<version>0.1</version>
+	<description>Gokei Player Field Plugin</description>
+
+	<scriptfile>install/script.php</scriptfile>
+
+	<files>
+		<folder>assets</folder>
+		<folder>languages</folder>
+		<folder>tmpl</folder>
+		<folder>install</folder>
+		
+		<filename plugin="gokei_player">gokei_player.php</filename>
+		<filename>index.html</filename>
+	</files>
+	
+	<languages folder="languages">
+			<language tag="en-GB">en-GB/en-GB.plg_cck_gokei_playerr.ini</language>
+			<language tag="ru-RU">pt-BR/pt-BR.plg_cck_field_gokei_player.ini</language>
+	</languages>
+	
+	<config>
+		<fields addfieldpath="/libraries/cck/construction/field" name="params">
+
+			<fieldset name="basic">
+				<field name="" type="spacer" hr="false"/>
+			</fieldset>
+
+			<fieldset name="advanced">
+				<field type="text" name="group" description="PLG_CCK_FIELD_GROUP_DESC" size="60" label="PLG_CCK_FIELD_GROUP_LABEL" default="PLG_CCK_FIELD_GROUP_VIDEO" />
+				<field type="cckexport" name="export" description="PLG_CCK_FIELD_EXPORT_DESC" label="PLG_CCK_FIELD_EXPORT_LABEL" default=""/>
+			</fieldset>
+
+		</fields>
+	</config>
+	
+</extension>
